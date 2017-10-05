@@ -41,9 +41,11 @@ public class UserAdapter extends ArrayAdapter<Bean>
         TextView txtName = (TextView) view.findViewById(R.id.namel);
         TextView txtAge = (TextView) view.findViewById(R.id.agel);
 
+
         Bean bean = UserList.get(position);
         txtName.setText(bean.getName());
         txtAge.setText(bean.getAge());
+
 
 
         return view;

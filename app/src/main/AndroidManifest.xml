@@ -26,7 +26,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".OfflineMode.AllUsers"></activity>
+        <activity android:name=".OfflineMode.AllUsers" />
+        <activity android:name=".OnlineMode.AllUsersServer"></activity>
     </application>
 
 </manifest>

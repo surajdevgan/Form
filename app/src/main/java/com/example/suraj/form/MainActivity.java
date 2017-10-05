@@ -24,6 +24,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.suraj.form.OfflineMode.AllUsers;
 import com.example.suraj.form.OfflineMode.Util;
+import com.example.suraj.form.OnlineMode.AllUsersServer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -129,6 +130,11 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(this, AllUsers.class);
             startActivity(i);
 
+        }
+        if (id==R.id.online)
+        {
+            Intent i = new Intent(this, AllUsersServer.class);
+            startActivity(i);
         }
         return super.onOptionsItemSelected(item);
     }
